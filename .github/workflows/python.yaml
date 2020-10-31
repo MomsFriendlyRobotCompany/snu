@@ -1,0 +1,27 @@
+name: CheckPython
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        strategy:
+          max-parallel: 5
+          matrix:
+            python-version: [3.6, 3.7, 3.8]
+        steps:
+            - uses: actions/checkout@master
+            - name: Setup Python ${{ matrix.python-version }}
+              uses: actions/setup-python@v1
+              with:
+                python-version: ${{ matrix.python-version }} # Version range or exact version of a Python version to use, using semvers version range syntax.
+                # architecture: 'x64' # (x64 or x86)
+            - name: Install Poetry
+              uses: dschep/install-poetry-action@v1.3
+              # with:
+              #   version: 1.0.0b3
+            - name: Turn off Virtualenvs
+              run: poetry config virtualenvs.create false
+            - name: Install packages
+              run: poetry install
+            - name: Run PyTest
+              run: poetry run pytest
