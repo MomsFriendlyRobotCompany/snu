@@ -1,4 +1,11 @@
+![](docs/pics/snu_snu.gif)
+
 # Snu
+
+![CheckPython](https://github.com/MomsFriendlyRobotCompany/snu/workflows/CheckPython/badge.svg)
+![GitHub](https://img.shields.io/github/license/MomsFriendlyRobotCompany/snu)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/snu)
+![PyPI](https://img.shields.io/pypi/v/snu)
 
 **Not ready for prime time ... look away!**
 
