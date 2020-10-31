@@ -1,6 +1,7 @@
 from snu.snu import Vector
 from snu.snu import Twist
 from snu.snu import Wrench
+from snu.snu import Quaternion
 import numpy as np
 import pytest
 
@@ -39,3 +40,7 @@ def test_twist():
     t = Twist()
     print(t)
     assert True
+
+def test_quaternion():
+    q = Quaternion()
+    assert q.w == 1.0

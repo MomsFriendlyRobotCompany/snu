@@ -12,7 +12,7 @@
 ## Example
 
 ```python
-from snu.snu import Vector
+from snu.snu import Vector, Twist, Wrench, Quaternion
 
 v = Vector(1,2,3)
 ```

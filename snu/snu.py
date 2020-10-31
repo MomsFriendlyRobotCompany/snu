@@ -56,7 +56,13 @@ class Vector:
         # return np.all(self.__data,vv.__data)
 
     def __mul__(self, s):
-        return NotImplementedError(f"Invalide type for Vector*s: {type(s)}")
+        # dot product?
+        v = self.__data
+        if isinstance(s, (float, int)):
+            return Vector(s*v[0],s*v[1],s*v[2])
+        elif isinstance(s, Vector):
+            return Vector(s[0]*v[0],s[1]*v[1],s[2]*v[2])
+        return NotImplementedError(f"Invalide type for s*Vector: {type(s)}")
 
     def __rmul__(self, s):
         """Would handle things like: s*v"""
@@ -78,6 +84,15 @@ class Vector:
     def to_tuple(self):
         v = self.__data
         return (v[0],v[1],v[2],)
+
+    def cross(self, a):
+        raise NotImplementedError()
+
+    def normalize(self):
+        raise NotImplementedError()
+
+    def magnitude(self):
+        raise NotImplementedError()
 
 
 class Foot:
