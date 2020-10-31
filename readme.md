@@ -1,4 +1,4 @@
-![](docs/pics/snu_snu.gif)
+![](https://github.com/MomsFriendlyRobotCompany/snu/blob/main/docs/pics/snu_snu.gif)
 
 # Snu
 
