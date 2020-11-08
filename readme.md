@@ -7,10 +7,6 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/snu)
 ![PyPI](https://img.shields.io/pypi/v/snu)
 
-
-<a href="https://www.buymeacoffee.com/walchko" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee" width="217px" height="60px" ></a>
-
-
 **Not ready for prime time ... look away!**
 
 ## Example
