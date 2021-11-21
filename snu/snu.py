@@ -1,6 +1,6 @@
 
 
-from snu.network.ip import get_ip
+# from snu.network.ip import get_ip
 
 from snu.messages import Vector
 from snu.messages import Twist
