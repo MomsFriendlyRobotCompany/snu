@@ -25,7 +25,7 @@ classifiers = [
 [tool.poetry.dependencies]
 python = ">=3.8"
 # colorama = "*"
-# squaternion = "*"
+squaternion = "*"
 # importlib-metadata = {version="*", python="<3.8"}
 
 [tool.poetry.dev-dependencies]
